@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		long long i,j,k=0,l,p=0,temp,x,a[3],m[3];
+		for(i=0;i<3;i++)
+		{
+			cin>>a[i];
+		}
+		for(i=0;i<3;i++)
+		{
+			cin>>m[i];
+		}
+	
+	for(i=0;i<3;i++)
+	{
+		for(j=i+1;j<3;j++)
+		{
+			
+				if(a[i]>a[j] && m[i]>m[j])
+				{
+					p=0;
+				}
+				else if(a[i]==a[j] && m[i]==m[j])
+				{
+					p=0;
+				}
+				else if(a[i]<a[j] && m[i]<m[j])
+				{
+					p=0;
+				}
+				
+				else
+				{
+					p=1;
+				}
+				if(p==1)
+				{break;
+								}				
+			
+		}
+		if(p==1)
+		{break;
+		}
+	}
+	if(p==1)
+	{
+		cout<<"NOT FAIR\n";
+	}
+	else
+	{cout<<"FAIR\n";
+	}
+	}
+}
